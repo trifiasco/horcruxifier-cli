@@ -1,0 +1,23 @@
+{
+  "name": "horcruxifier",
+  "version": "1.0.0",
+  "description": "horcruxify files. TADA!!!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trifiasco/Horcruxifier.git"
+  },
+  "author": "Arnab Roy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trifiasco/Horcruxifier/issues"
+  },
+  "homepage": "https://github.com/trifiasco/Horcruxifier#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "inquirer": "^6.5.0"
+  }
+}
