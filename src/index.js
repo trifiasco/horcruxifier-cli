@@ -5,6 +5,7 @@ var inquirer = require("inquirer");
 var chalk = require("chalk");
 var fs = require("fs");
 var crypto = require("crypto");
+var path = require('path');
 
 var response = chalk.bold.green;
 
@@ -47,12 +48,12 @@ function chunkify(data, chunkNums) {
 }
 
 function processPath(pathWithFileName){
-  let slicingIndex = pathWithFileName.lastIndexOf('/');
+  // let slicingIndex = pathWithFileName.lastIndexOf(path.sep);
 
-  if(slicingIndex != -1){
-    return pathWithFileName.slice(0, slicingIndex) + "/";
-  }
-  return "";
+  // if(slicingIndex != -1){
+  //   return pathWithFileName.slice(0, slicingIndex) + path.sep;
+  // }
+  return path.dirname(pathWithFileName);
 }
 
 function horcruxify(path, fileBlob, password){
@@ -63,11 +64,11 @@ function horcruxify(path, fileBlob, password){
 
   path = processPath(path);
 
-  if(!fs.existsSync(path + 'horcruxes')){
-    fs.mkdirSync(path + 'horcruxes');
+  if(!fs.existsSync(path + '/horcruxes')){
+    fs.mkdirSync(path + '/horcruxes');
   }
   for(var i = 0; i < 7; i++){
-    writeToFile(path + 'horcruxes/' + HORCRUXES[i] + ".txt", chunks[i]);
+    writeToFile(path + '/horcruxes/' + HORCRUXES[i] + ".txt", chunks[i]);
   }
   
   console.log(response("\nTA DA!!!! your file is horcruxified!!!\n"));
