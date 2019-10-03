@@ -8,6 +8,17 @@ Everyone has some files they want secured. How can you absolutely make sure that
 
 I don't if anyone ever thought this before or not. But [J. K. Rowling](https://www.jkrowling.com/) showed us an wonderful way to do it. Remember how `Voldemort` wanted to make sure that it's almost impossible to kill him? By making `Horcruxes`!!!
 
+### Installation
+If you have node on your machine, then open terminal. Change directory to whatever directory you wish this to be installed. Then just run this on terminal - 
+```
+npm i horcruxifier
+```
+
+this will create a `node_modules` folder in the directory you installed the package. Then run this module by entering - 
+```
+node node_modules/horcruxifier
+```
+
 ### How this works?
 This CLI lets you to make horcruxes (:P). If you run it, you will be asked to put a file name with the full path. Also a password. Then this application will encrypt the file and divide it into 7 different files (Horcruxes.. :P) in a folder. You can then distribute the 7 different files into different locations.
 
