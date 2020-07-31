@@ -16,7 +16,7 @@ I don't if anyone ever thought this before or not. But J. K. Rowling, the creato
 
 **And that's what this web application does!!!**
 
-### Installation
+## Installation
 
 If you have node on your machine, then open terminal. Change directory to whatever directory you wish this to be installed. Then just run this on terminal -
 
